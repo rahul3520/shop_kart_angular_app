@@ -9,6 +9,8 @@ import { ViewallProductComponent } from './viewall-product/viewall-product.compo
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FormsModule } from '@angular/forms';
 
+import {HttpClientModule} from '@angular/common/http'
+
 const myRoute:Routes=[
   {
     path:"",
@@ -31,7 +33,8 @@ const myRoute:Routes=[
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(myRoute),
-    FormsModule
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
