@@ -9,10 +9,13 @@ import { ViewallProductComponent } from './viewall-product/viewall-product.compo
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { FormsModule } from '@angular/forms';
 
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { UserRegistrationComponent } from './user-registration/user-registration.component';
-import { AddNavbarComponent } from './add-navbar/add-navbar.component'
+
+import { AddNavbarComponent } from './add-navbar/add-navbar.component';
+
+// import { AddNavbarComponent } from './add-navbar/add-navbar.component';
 
 const myRoute:Routes=[
   {
