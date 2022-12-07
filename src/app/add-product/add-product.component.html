@@ -1,16 +1,20 @@
-<app-nav-bar></app-nav-bar>
+<app-add-navbar></app-add-navbar>
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
             <div class="row g-3">
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="label-control">Product Name</label>
+                    <input name="name" [(ngModel)]="name" type="file" id="" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="label-control">Product Image</label>
                     <input name="image" [(ngModel)]="image" type="file" id="" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <label for="" class="label-control">Title</label>
-                    <input name="title" [(ngModel)]="title" type="text" class="form-control">
+                    <label for="" class="label-control">Category</label>
+                    <input name="category" [(ngModel)]="category" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="label-control">Description</label>
@@ -22,19 +26,19 @@
                 
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <label for="" class="label-control">Rating</label>
-                    <input name="rating" [(ngModel)]="rating" type="text" class="form-control">
+                    <label for="" class="label-control">Price</label>
+                    <input name="price" [(ngModel)]="price" type="text" class="form-control">
                 </div>
-                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                <!-- <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="label-control">Seller Name</label>
                     <input name="sellarName" [(ngModel)]="sellarName" type="text" class="form-control">
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="label-control">Quantity</label>
                     <input name="quantity" [(ngModel)]="quantity" type="text" class="form-control">
-                </div>
+                </div> -->
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
-                    <button (click)="readValues()" class="btn btn-primary">Submit</button>
+                    <button (click)="readProductData()" class="btn btn-primary">Submit</button>
                 </div>
             </div>
         </div>

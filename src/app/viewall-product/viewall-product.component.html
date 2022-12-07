@@ -1,34 +1,34 @@
-<app-nav-bar></app-nav-bar>
+<app-add-navbar></app-add-navbar>
 
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
 
 
-            <table class="table-borderless">
+            <table class="table">
                 <thead>
                     <tr>
-                        <th>ID</th>
-                        <th>Title</th>
-                        <th>Price</th>
-                        <th>Description</th>
-                        <th>Category</th>
+                        <th>name</th>
                         <th>image</th>
+                        <th>category</th>
+                        <th>description</th>
+                        <th>price</th>
+                        <!-- <th>image</th>
                         <th>Rating value</th>
-                        <th>Rating count</th>
+                        <th>Rating count</th> -->
 
                     </tr>
                 </thead>
                 <tbody>
                     <tr *ngFor="let i of products">
-                        <td>{{i.id}}</td>
-                        <td>{{i.title}}</td>
-                        <td>{{i.price}}</td>
-                        <td>{{i.description}}</td>
-                        <td>{{i.category}}</td>
+                        <td>{{i.name}}</td>
                         <td>{{i.image}}</td>
+                        <td>{{i.category}}</td>
+                        <td>{{i.description}}</td>
+                        <td>{{i.price}}</td>
+                        <!-- <td>{{i.image}}</td>
                         <td>{{i.rating.rate}}</td>
-                        <td>{{i.rating.count}}</td>
+                        <td>{{i.rating.count}}</td> -->
 
                     </tr>
                 </tbody>
