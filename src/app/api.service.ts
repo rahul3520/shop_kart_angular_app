@@ -12,4 +12,9 @@ export class ApiService {
   {
     return this.http.get("https://fakestoreapi.com/products")
   }
+
+  userRegn=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/adduser",dataToSend)
+  }
 }
