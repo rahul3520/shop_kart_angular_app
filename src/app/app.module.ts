@@ -14,17 +14,35 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { UserRegistrationComponent } from './user-registration/user-registration.component';
 
 import { AddNavbarComponent } from './add-navbar/add-navbar.component';
+import { SearchProductComponent } from './search-product/search-product.component';
+import { UserLoginComponent } from './user-login/user-login.component';
 
 // import { AddNavbarComponent } from './add-navbar/add-navbar.component';
 
 const myRoute:Routes=[
   {
     path:"",
-    component:AddProductComponent
+    component:AdminLoginComponent
+  },
+  {
+    path:"user",
+    component:UserLoginComponent
+  },
+  {
+    path:"userregn",
+    component:UserRegistrationComponent
   },
   {
     path:"view",
     component:ViewallProductComponent
+  },
+  {
+    path:"add",
+    component:AddProductComponent
+  },
+  {
+    path:"search",
+    component:SearchProductComponent
   }
 ]
 
@@ -36,7 +54,9 @@ const myRoute:Routes=[
     NavBarComponent,
     AdminLoginComponent,
     UserRegistrationComponent,
-    AddNavbarComponent
+    AddNavbarComponent,
+    SearchProductComponent,
+    UserLoginComponent
   ],
   imports: [
     BrowserModule,

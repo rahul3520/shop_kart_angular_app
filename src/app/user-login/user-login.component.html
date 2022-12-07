@@ -1,0 +1,37 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+
+            <div class="row g-3">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="label-control">Email ID</label>
+                    <input name="email" [(ngModel)]="email" type="text" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <label for="" class="label-control">Password</label>
+                    <input type="password" name="password" [(ngModel)]="password" id="" class="form-control">
+                </div>
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    <button (click)="searchUserDetails()" class="btn btn-success">Login</button>
+                </div>
+
+                <div class="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3" *ngFor="let j of searchData">
+
+                    <div class="card" >
+                        <img src="{{j.image}}" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">{{j.name}}</h5>
+                          <p class="card-text">{{j.description}}</p>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">{{j.category}}</li>
+                          <li class="list-group-item">{{j.price}}</li>
+                          
+                        </ul>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
