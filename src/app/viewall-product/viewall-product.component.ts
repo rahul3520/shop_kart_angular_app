@@ -12,7 +12,7 @@ export class ViewallProductComponent {
   {
     api.fetchProducts().subscribe(
 
-      (response)=>
+      (response:any)=>
       {
         this.products=response;
       }
