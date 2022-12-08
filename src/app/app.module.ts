@@ -16,6 +16,7 @@ import { UserRegistrationComponent } from './user-registration/user-registration
 import { AddNavbarComponent } from './add-navbar/add-navbar.component';
 import { SearchProductComponent } from './search-product/search-product.component';
 import { UserLoginComponent } from './user-login/user-login.component';
+import { UserNavbarComponent } from './user-navbar/user-navbar.component';
 
 // import { AddNavbarComponent } from './add-navbar/add-navbar.component';
 
@@ -43,6 +44,10 @@ const myRoute:Routes=[
   {
     path:"search",
     component:SearchProductComponent
+  },
+  {
+    path:"userNavbar",
+    component:UserNavbarComponent
   }
 ]
 
@@ -56,7 +61,8 @@ const myRoute:Routes=[
     UserRegistrationComponent,
     AddNavbarComponent,
     SearchProductComponent,
-    UserLoginComponent
+    UserLoginComponent,
+    UserNavbarComponent
   ],
   imports: [
     BrowserModule,

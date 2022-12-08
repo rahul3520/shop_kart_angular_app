@@ -1,5 +1,5 @@
 <app-nav-bar></app-nav-bar>
-
+<h1>User Registration</h1>
 <div class="container">
     <div class="row">
         <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
@@ -11,7 +11,11 @@
                 </div>
                 <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <label for="" class="label-control">Address</label>
-                    <textarea name="address" [(ngModel)]="address" id="" cols="30" rows="10"></textarea>
+                </div>
+                
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+                    
+                    <textarea name="address" [(ngModel)]="address" id="" cols="180" rows="10"></textarea>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
                     <label for="" class="label-control">Phone No</label>
@@ -29,7 +33,7 @@
                     <label for="" class="label-control">Confirm Password</label>
                     <input name="confirmPassword" [(ngModel)]="confirmPassword" type="password" name="" id="" class="form-control">
                 </div>
-                <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                     <button (click)="UserRegistration()" class="btn btn-success">Register</button>
                 </div>
                 <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 col-xxl-6">

@@ -12,9 +12,11 @@ export class UserLoginComponent {
   email=""
   password=""
 
-  constructor(private api:ApiService){}
+  constructor(private api:ApiService,private route:Router){}
 
   // constructor(private route:Router){}
+
+  // private route:Router
 
   searchData:any=[]
   searchUserDetails=()=>
@@ -36,7 +38,9 @@ export class UserLoginComponent {
           } else 
           {
             alert("Valid User credentials")
-            this.searchData=response
+            // this.searchData=response
+
+            this.route.navigate(["/userNavbar"])
 
           }
         }
