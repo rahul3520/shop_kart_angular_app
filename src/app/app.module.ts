@@ -17,6 +17,7 @@ import { AddNavbarComponent } from './add-navbar/add-navbar.component';
 import { SearchProductComponent } from './search-product/search-product.component';
 import { UserLoginComponent } from './user-login/user-login.component';
 import { UserNavbarComponent } from './user-navbar/user-navbar.component';
+import { ViewProfileComponent } from './view-profile/view-profile.component';
 
 // import { AddNavbarComponent } from './add-navbar/add-navbar.component';
 
@@ -48,6 +49,10 @@ const myRoute:Routes=[
   {
     path:"userNavbar",
     component:UserNavbarComponent
+  },
+  {
+    path:"viewProfile",
+    component:ViewProfileComponent
   }
 ]
 
@@ -62,7 +67,8 @@ const myRoute:Routes=[
     AddNavbarComponent,
     SearchProductComponent,
     UserLoginComponent,
-    UserNavbarComponent
+    UserNavbarComponent,
+    ViewProfileComponent
   ],
   imports: [
     BrowserModule,

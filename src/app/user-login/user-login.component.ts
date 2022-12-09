@@ -25,13 +25,16 @@ export class UserLoginComponent {
 
       console.log(data)
 
-      this.api.searchUsers(data).subscribe(
+      // this.api.searchUsers(data).subscribe
+      
+      this.api.FetchUserId(data).subscribe
+      (
 
         (response:any)=>
         {
           console.log(response)
 
-          if (response.length==0) {
+          if (response.status=="Invalid") {
 
             alert("Invalid User Credentials")
             
@@ -40,7 +43,15 @@ export class UserLoginComponent {
             alert("Valid User credentials")
             // this.searchData=response
 
-            this.route.navigate(["/userNavbar"])
+            let userId=response.id;
+            console.log(userId)
+
+            localStorage.setItem("userInfo",userId)
+
+
+            this.route.navigate(["/viewProfile"])
+
+            // this.route.navigate(["/userNavbar"])
 
           }
         }

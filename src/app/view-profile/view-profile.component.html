@@ -1,0 +1,47 @@
+<nav class="navbar navbar-expand-lg bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">View Profile Page</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" routerLink="/view">View Product</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/viewProfile">View Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/">Logout</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <h1>Logged User ID: {{userId}}</h1>
+
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            
+            <div class="card" >
+                <div class="card-header">
+                  {{data[0].name}}
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item">{{data[0].address}}</li>
+                  <li class="list-group-item">{{data[0].phoneNo}}</li>
+                  <li class="list-group-item">{{data[0].email}}</li>
+                </ul>
+              </div>
+
+
+        </div>
+    </div>
+</div>
+
+  
+

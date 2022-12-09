@@ -32,4 +32,14 @@ export class ApiService {
   {
     return this.http.post("http://localhost:8080/searchuser",dataToSend)
   }
+
+  FetchUserId=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/userloginverify",dataToSend)
+  }
+
+  GetLoggedUserDetails=(dataToSend:any)=>
+  {
+    return this.http.post("http://localhost:8080/viewUserLogged",dataToSend)
+  }
 }
